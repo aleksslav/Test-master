@@ -1,0 +1,148 @@
+.content-description__left {
+  margin: 127px 0 290px 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.content-description__title {
+  @include reset-list;
+  width: 500px;
+  margin-bottom: 80px;
+  font-family: $font-deafult;
+  font-size: 104px;
+  line-height: 114px;
+  font-weight: 600;
+  font-style: normal;
+  text-align: left;
+  color: $basic-white;
+  animation: title 500ms linear;
+  overflow: hidden;
+
+  @keyframes title {
+    from {
+      width: 0;
+    }
+    to {
+      width: 500px;
+    }
+  }
+}
+
+.content-description__button {
+  outline: none;
+  background: none;
+  text-transform: uppercase;
+  color: $basic-white;
+  border: 1px solid $basic-white;
+  font-family: $font-deafult;
+  padding: 30px 124px;
+  font-size: 18px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transform: scale(1);
+  animation: button 500ms linear;
+
+  @keyframes button {
+    from {
+      transform: scale(0);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:focus {
+    opacity: 0.3;
+  }
+}
+
+.content-description__right {
+  position: absolute;
+  top: 32%;
+  left: 50%;
+}
+
+.content-description__topic {
+
+  @include reset-list;
+  margin-bottom: 50px;
+  font-family: $font-deafult;
+  font-size: 35px;
+  line-height: 35px;
+  font-weight: 500;
+  font-style: normal;
+  text-align: left;
+  color: $basic-melrose;
+  top: 82%;
+  left: 50%;
+
+  transform-origin: -80% center;
+  animation: topic 1s linear 9s forwards;
+  transform: rotateZ(90deg);
+  color: $basic-melrose;
+
+  @keyframes topic {
+    0% {
+      transform: rotateZ(90deg);
+    }
+    100% {
+      transform: rotateZ(0deg);
+    }
+  }
+}
+
+.content-description__text{
+  @include reset-list;
+  margin-bottom: 67px;
+  font-family: $font-deafult;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 500;
+  font-style: normal;
+  text-align: left;
+  color: $basic-melrose;
+  width: 70%;
+  top: 92%;
+  left: 50%;
+  transform-origin: -80% center;
+  animation: text 1s linear 9.25s forwards;
+  transform: rotateZ(90deg);
+  color: $basic-melrose;
+
+  @keyframes text {
+    0% {
+      transform: rotateZ(90deg);
+    }
+    100% {
+      transform: rotateZ(0deg);
+    }
+  }
+}
+
+.content-description__button--right {
+  position: absolute;
+  margin-top: 30px;
+  top: 98%;
+  left: 0%;
+
+  transform-origin: -80% center;
+  animation: button-right 1s linear 9.5s forwards;
+  animation-delay: 9.5s;
+  transform: rotateZ(90deg);
+  animation-fill-mode: forwards;
+  color: $basic-melrose;
+
+  @keyframes button-right {
+    0% {
+      transform: rotateZ(90deg);
+    }
+    100% {
+      transform: rotateZ(0deg);
+    }
+  }
+}

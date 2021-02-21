@@ -1,0 +1,12 @@
+.page-header {
+  @include wrapper;
+  display: flex;
+  flex-direction: column;
+  font-family: $font-deafult;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 500;
+  font-style: normal;
+  text-align: left;
+  color: $basic-melrose;
+}
